@@ -1,0 +1,15 @@
+{
+  "name": "tsrootsrc-yarnv1",
+  "version": "1.0.0",
+  "description": "Demonstration of yarn2 bug regarding expanding Typescripts rootDir. Reference yarnv1 setup.",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspace @localscope/dep build && yarn workspace main build",
+    "start": "cd packages/main && node dist/index.js",
+    "clean": "yarn workspace @localscope/dep clean ; yarn workspace main clean"
+  }
+}

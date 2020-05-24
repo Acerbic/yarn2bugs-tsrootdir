@@ -1,0 +1,17 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Main module that uses type defs from `@localscope/dep`.",
+  "license": "MIT",
+  "main": "",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn node ./dist/index.js",
+    "clean": "rm -rf ./dist"
+  },
+  "devDependencies": {
+    "@localscope/dep": "*",
+    "@types/node": "^14.0.5",
+    "typescript": "^3.9.3"
+  }
+}

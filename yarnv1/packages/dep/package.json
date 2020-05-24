@@ -1,0 +1,16 @@
+{
+  "name": "@localscope/dep",
+  "version": "1.0.0",
+  "description": "Dependency package to be referenced from the main package.",
+  "license": "MIT",
+  "main": "",
+  "private": true,
+  "typings": "src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -f src/*.d.ts"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}
